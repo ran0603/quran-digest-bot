@@ -1,7 +1,7 @@
 {
-  "name": "quran-reminder-bot",
+  "name": "quran-digest-bot",
   "version": "1.0.0",
-  "description": "A lightweight Telegram bot that sends daily Qur'an reminders with Tafsir As-Sa'di (English).",
+  "description": "A lightweight Telegram bot that sends daily Qur'an digests with Tafsir As-Sa'di (English).",
   "main": "src/bot.js",
   "type": "module",
   "scripts": {
@@ -10,21 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ran0603/quran-reminder-bot.git"
+    "url": "git+https://github.com/ran0603/quran-digest-bot.git"
   },
   "keywords": [
     "quran",
     "telegram-bot",
     "tafsir",
     "islamic",
-    "reminder"
+    "digest"
   ],
   "author": "MingMing",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ran0603/quran-reminder-bot/issues"
+    "url": "https://github.com/ran0603/quran-digest-bot/issues"
   },
-  "homepage": "https://github.com/ran0603/quran-reminder-bot#readme",
+  "homepage": "https://github.com/ran0603/quran-digest-bot#readme",
   "dependencies": {
     "dotenv": "^17.2.3",
     "lowdb": "^7.0.1",

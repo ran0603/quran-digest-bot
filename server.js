@@ -9,7 +9,7 @@ app.use('/images', express.static(path.join(__dirname, 'public/images')))
 
 // Health check
 app.get('/', (req, res) => {
-  res.send('Quran Reminder Bot is running.')
+  res.send('Quran Daily Digest Bot is running.')
 })
 
 const PORT = process.env.PORT || 3000

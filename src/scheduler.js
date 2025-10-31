@@ -4,13 +4,13 @@ import { randomVerse } from './utils/randomVerse.js'
 import { logger } from './utils/logger.js'
 
 /**
- * Schedules daily Qur'an reminders.
+ * Schedules daily Qur'an digests.
  * @param {TelegramBot} bot - The Telegram bot instance.
  */
-export function scheduleDailyReminders(bot) {
+export function scheduleDailyDigests(bot) {
   // ⏰ Runs every day at 8:00 AM (server time)
   cron.schedule('0 8 * * *', async () => {
-    logger.info('🕊️ Sending daily Qur’an reminder...')
+    logger.info('🕊️ Sending daily Qur’an digest...')
 
     const users = await getUsers()
     if (!users || users.length === 0) {
@@ -34,14 +34,14 @@ export function scheduleDailyReminders(bot) {
             { parse_mode: 'Markdown' }
           )
         }
-        logger.info(`📩 Reminder sent to ${user.id}`)
+        logger.info(`📩 Digest sent to ${user.id}`)
       } catch (err) {
-        logger.error(`❌ Failed to send reminder to ${user.id}: ${err.message}`)
+        logger.error(`❌ Failed to send digest to ${user.id}: ${err.message}`)
       }
     }
 
-    logger.success(`✅ Sent daily reminder to ${users.length} subscribers.`)
+    logger.success(`✅ Sent daily digest to ${users.length} subscribers.`)
   })
 
-  logger.info('🕰️ Daily reminder scheduler initialized.')
+  logger.info('🕰️ Daily digest scheduler initialized.')
 }

@@ -2,7 +2,7 @@ import { Telegraf } from 'telegraf'
 import dotenv from 'dotenv'
 import { initDB, addUser } from './db.js'
 import { registerCommands } from './handlers/commands.js'
-import { scheduleDailyReminders } from './scheduler.js'
+import { scheduleDailyDigests } from './scheduler.js'
 import { logger } from './utils/logger.js'
 
 dotenv.config()
@@ -22,8 +22,8 @@ const bot = new Telegraf(BOT_TOKEN)
 // ✅ Register bot commands
 registerCommands(bot)
 
-// ✅ Start daily reminder scheduler
-scheduleDailyReminders(bot)
+// ✅ Start daily digest scheduler
+scheduleDailyDigests(bot)
 
 // ✅ Handle incoming messages
 bot.on('text', async (ctx) => {
@@ -36,7 +36,7 @@ bot.on('text', async (ctx) => {
 
 // ✅ Launch the bot
 bot.launch()
-logger.success('🤖 Quran Reminder Bot is now running...')
+logger.success('🤖 Quran Daily Digest Bot is now running...')
 
 // ✅ Graceful shutdown
 process.once('SIGINT', () => {

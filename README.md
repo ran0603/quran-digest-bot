@@ -1,6 +1,6 @@
-# 🌿 Qur'an Reminder Bot
+# 🌿 Qur'an Digest Bot
 
-A lightweight **Telegram bot** that sends daily Qur'an reminders with *Tafsir As-Sa'di (English)*.  
+A lightweight **Telegram bot** that sends daily Qur'an digests with *Tafsir As-Sa'di (English)*.  
 Built using **Node.js**, **lowdb**, and **node-cron**, designed to run easily on **Render** or any Node host.
 
 ---
@@ -12,7 +12,7 @@ Built using **Node.js**, **lowdb**, and **node-cron**, designed to run easily on
   - `/start` – Welcome message  
   - `/help` – How to use  
   - `/verse` – Get a verse instantly
-- 🕰️ Automated daily reminders (8:00 AM server time)
+- 🕰️ Automated daily digests (8:00 AM server time)
 - 🗃️ Lightweight local database using **lowdb**
 - 📜 Smart logger with color-coded console + file logs
 - 🧩 Modular structure for clarity and maintainability
@@ -23,8 +23,8 @@ Built using **Node.js**, **lowdb**, and **node-cron**, designed to run easily on
 
 ### 1️⃣ Clone this repo
 ```bash
-git clone https://github.com/ran0603/quran-reminder-bot.git
-cd quran-reminder-bot
+git clone https://github.com/ran0603/quran-digest-bot.git
+cd quran-digest-bot
 ```
 
 ### 2️⃣ Install dependencies
@@ -91,5 +91,5 @@ Powered by Node.js, lowdb, and node-telegram-bot-api
 This project is open-source under the ISC License.
 You’re free to use, modify, and share it for beneficial purposes.
 
-__🌸 “And remind, for indeed, the reminder benefits the believers.”__
+__🌸 “And remind, for indeed, the digest benefits the believers.”__
 (Qur’an 51:55)
