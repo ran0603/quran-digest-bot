@@ -2,9 +2,9 @@ export const messages = {
   start: `
 🌿 *Assalamu'alaikum!*
 
-Welcome to the *Qur'an Digest Bot* — your gentle companion for daily reflections from *Tafsir As-Sa'di (English)*.
+Welcome to the *Qur'an Daily Digest Bot* — your companion for daily reflections from *Tafsir As-Sa'di* (English translated).
 
-You’ll receive a random ayah and short tafsir digest every day, in shaa Allah.
+You'll receive a random ayah and short tafsir digest every day, in shaa Allah.
   
 Use:
 /verse — Get a random verse & tafsir  
@@ -16,9 +16,9 @@ Use:
 
 • /start — Begin your journey with digests  
 • /verse — Receive a random verse & tafsir anytime  
-• Daily digest — You’ll automatically get one in shaa Allah!
+• Daily digest — You'll automatically get one in shaa Allah!
 
-_Source: Tafsir As-Sa'di (English)_
+_Tafsir As-Sa'di_
   `,
 
   loading: '⏳ Fetching your digest... please wait a moment.',
@@ -26,5 +26,5 @@ _Source: Tafsir As-Sa'di (English)_
   error:
     '⚠️ Sorry, something went wrong while fetching the verse. Please try again later.',
 
-  footer: "\n\n🌸 _Source: Tafsir As-Sa'di (English)_",
+  footer: "\n\n🌸 _Tafsir As-Sa'di_",
 }

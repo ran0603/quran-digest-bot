@@ -9,7 +9,7 @@ dotenv.config()
 
 const BOT_TOKEN = process.env.BOT_TOKEN
 if (!BOT_TOKEN) {
-  logger.error('Missing BOT_TOKEN in environment variables.')
+  logger.error('❌ Missing BOT_TOKEN in environment variables.')
   process.exit(1)
 }
 

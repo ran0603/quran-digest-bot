@@ -10,7 +10,7 @@ import { logger } from './utils/logger.js'
 export function scheduleDailyDigests(bot) {
   // ⏰ Runs every day at 8:00 AM (server time)
   cron.schedule('0 8 * * *', async () => {
-    logger.info('🕊️ Sending daily Qur’an digest...')
+    logger.info('⏰ Sending daily Qur’an digest...')
 
     const users = await getUsers()
     if (!users || users.length === 0) {
